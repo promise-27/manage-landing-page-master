@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -10,4 +11,176 @@ img {
 
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  padding: 0 5rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+header nav .nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+header nav .nav-links a {
+  color: hsl(228, 39%, 23%);
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+
+header nav .nav-links a:hover {
+  color: hsl(12, 88%, 59%);
+  font-weight: 600;
+}
+
+header button {
+  background-color: hsl(12, 88%, 59%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0px 10px 20px -5px hsl(12, 88%, 79%);
+}
+
+header button:hover {
+  background-color: hsl(12, 88%, 69%);
+  box-shadow: 0px 10px 20px -5px hsl(12, 88%, 79%);
+}
+
+header .menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+header picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  transform: translateX(40%);
+  transform: translateY(-10%);
+  overflow-x: hidden;
+}
+
+header .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 0;
+  gap: 5rem;
+}
+
+header .header-section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header .header-section-left h1 {
+  font-size: 3.5rem;
+  color: hsl(228, 39%, 23%);
+  line-height: 1.2;
+}
+
+header .header-section-left p {
+  padding-right: 12rem;
+  color: hsl(12, 7%, 59%);
+}
+
+header .header-section-left button {
+  width: 40%;
+}
+
+main {
+  position: relative;
+}
+
+main > img {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-32rem, 28rem);
+  overflow-x: hidden;
+}
+
+main .contents {
+  display: flex;
+  padding: 0 5rem;
+  gap: 2rem;
+}
+
+main .contents .content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main .contents .content-left h2 {
+  font-size: 2.5rem;
+}
+
+main .contents .content-left p {
+  padding-right: 12rem;
+  font-size: 18px;
+  color: hsl(12, 7%, 59%);
+}
+
+main .contents .content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main .contents .content-right .content-right1,
+main .contents .content-right .content-right2,
+main .contents .content-right .content-right3 {
+  line-height: 1.9;
+  display: flex;
+  gap: 3rem;
+}
+
+main .contents .content-right .content-right1 .content-right-content h4,
+main .contents .content-right .content-right2 .content-right-content h4,
+main .contents .content-right .content-right3 .content-right-content h4 {
+  font-size: 20px;
+  margin-bottom: 0.6rem;
+}
+
+main .contents .content-right .content-right1 .content-right-content p,
+main .contents .content-right .content-right2 .content-right-content p,
+main .contents .content-right .content-right3 .content-right-content p {
+  font-size: 18px;
+  color: hsl(12, 7%, 59%);
+}
+
+main .contents .content-right .content-right1 button,
+main .contents .content-right .content-right2 button,
+main .contents .content-right .content-right3 button {
+  height: 25%;
+  width: 40%;
+  border-radius: 40px;
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0px 10px 20px -5px hsl(12, 88%, 79%);
 }
