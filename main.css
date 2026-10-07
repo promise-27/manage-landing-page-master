@@ -16,6 +16,7 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -79,7 +80,6 @@ header picture {
   z-index: -1;
   transform: translateX(40%);
   transform: translateY(-10%);
-  overflow-x: hidden;
 }
 
 header .section {
@@ -260,4 +260,78 @@ main .main-last img {
   position: absolute;
   transform: translate(0, -7rem);
   z-index: -1;
+}
+
+main .main-last .main-last-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .main-last .main-last-text h2 {
+  font-size: 36px;
+  color: white;
+  max-width: 20ch;
+}
+
+main .main-last .main-last-text button {
+  background-color: white;
+  color: hsl(12, 88%, 59%);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0px 10px 20px -5px hsl(12, 88%, 59%);
+}
+
+footer {
+  background-color: hsl(228, 39%, 23%);
+  width: 100%;
+  display: flex;
+  padding: 3rem 5rem;
+  align-items: center;
+  gap: 13rem;
+}
+
+footer .logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+footer .logos img {
+  filter: brightness(0) invert(1);
+}
+
+footer .logos .socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer .text {
+  display: flex;
+  gap: 7rem;
+}
+
+footer .texts1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+footer .texts1 a,
+footer .texts2 a {
+  color: white;
+}
+
+footer .texts2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
