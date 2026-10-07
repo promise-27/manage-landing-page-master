@@ -126,6 +126,7 @@ main .contents {
   display: flex;
   padding: 0 5rem;
   gap: 2rem;
+  margin-bottom: 8rem;
 }
 
 main .contents .content-left {
@@ -183,4 +184,80 @@ main .contents .content-right .content-right3 button {
   border: none;
   font-weight: 600;
   box-shadow: 0px 10px 20px -5px hsl(12, 88%, 79%);
+}
+
+main .profiles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .profiles h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+main .profiles .profile-info {
+  display: flex;
+  gap: 2rem;
+}
+
+main .profiles .profile-info .info {
+  display: flex;
+  padding: 0 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(0, 0%, 98%);
+  margin-bottom: 5rem;
+}
+
+main .profiles .profile-info .info img {
+  width: 18%;
+  transform: translateY(-50%);
+}
+
+main .profiles .profile-info .info h4 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+main .profiles .profile-info .info p {
+  color: hsl(12, 7%, 59%);
+  margin-bottom: 1.5rem;
+}
+
+main .profiles button {
+  background-color: hsl(12, 88%, 59%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0px 10px 20px -5px hsl(12, 88%, 79%);
+  margin-bottom: 7rem;
+}
+
+main .profiles button:hover {
+  background-color: hsl(12, 88%, 69%);
+  box-shadow: 0px 10px 20px -5px hsl(12, 88%, 79%);
+}
+
+main .main-last {
+  width: 100%;
+  position: relative;
+  background-color: hsl(12, 88%, 59%);
+  height: 240px;
+  z-index: -100;
+}
+
+main .main-last img {
+  position: absolute;
+  transform: translate(0, -7rem);
+  z-index: -1;
 }
